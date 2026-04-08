@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* WarikanDentakuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001 /* WarikanDentakuApp.swift */; };
+		A10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002 /* ContentView.swift */; };
+		A10003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10003 /* Assets.xcassets */; };
+		A10004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10004 /* Preview Assets.xcassets */; };
+		A10010 /* WarikanRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010 /* WarikanRecord.swift */; };
+		A10011 /* PersonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011 /* PersonResult.swift */; };
+		A10012 /* WarikanGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012 /* WarikanGroup.swift */; };
+		A10013 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013 /* OrderItem.swift */; };
+		A10020 /* BasicWarikanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10020 /* BasicWarikanViewModel.swift */; };
+		A10021 /* KeishaWarikanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10021 /* KeishaWarikanViewModel.swift */; };
+		A10022 /* KobetsuWarikanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022 /* KobetsuWarikanViewModel.swift */; };
+		A10030 /* BasicWarikanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10030 /* BasicWarikanView.swift */; };
+		A10031 /* KeishaWarikanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10031 /* KeishaWarikanView.swift */; };
+		A10032 /* KobetsuWarikanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10032 /* KobetsuWarikanView.swift */; };
+		A10033 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10033 /* HistoryListView.swift */; };
+		A10034 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10034 /* HistoryDetailView.swift */; };
+		A10035 /* BannerAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10035 /* BannerAdView.swift */; };
+		A10036 /* InterstitialAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10036 /* InterstitialAdManager.swift */; };
+		A10040 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10040 /* CurrencyFormatter.swift */; };
+		A10041 /* PaymentLinkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10041 /* PaymentLinkHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C10001 /* WarikanDentaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarikanDentaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10001 /* WarikanDentakuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarikanDentakuApp.swift; sourceTree = "<group>"; };
+		B10002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B10010 /* WarikanRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarikanRecord.swift; sourceTree = "<group>"; };
+		B10011 /* PersonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonResult.swift; sourceTree = "<group>"; };
+		B10012 /* WarikanGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarikanGroup.swift; sourceTree = "<group>"; };
+		B10013 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		B10020 /* BasicWarikanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicWarikanViewModel.swift; sourceTree = "<group>"; };
+		B10021 /* KeishaWarikanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeishaWarikanViewModel.swift; sourceTree = "<group>"; };
+		B10022 /* KobetsuWarikanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KobetsuWarikanViewModel.swift; sourceTree = "<group>"; };
+		B10030 /* BasicWarikanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicWarikanView.swift; sourceTree = "<group>"; };
+		B10031 /* KeishaWarikanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeishaWarikanView.swift; sourceTree = "<group>"; };
+		B10032 /* KobetsuWarikanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KobetsuWarikanView.swift; sourceTree = "<group>"; };
+		B10033 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
+		B10034 /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		B10035 /* BannerAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdView.swift; sourceTree = "<group>"; };
+		B10036 /* InterstitialAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdManager.swift; sourceTree = "<group>"; };
+		B10040 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		B10041 /* PaymentLinkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentLinkHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E10000 = {
+			isa = PBXGroup;
+			children = (
+				E10001 /* WarikanDentaku */,
+				E10099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E10001 /* WarikanDentaku */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* WarikanDentakuApp.swift */,
+				B10002 /* ContentView.swift */,
+				E10010 /* Models */,
+				E10020 /* ViewModels */,
+				E10030 /* Views */,
+				E10040 /* Utilities */,
+				B10003 /* Assets.xcassets */,
+				E10050 /* Preview Content */,
+			);
+			path = WarikanDentaku;
+			sourceTree = "<group>";
+		};
+		E10010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B10010 /* WarikanRecord.swift */,
+				B10011 /* PersonResult.swift */,
+				B10012 /* WarikanGroup.swift */,
+				B10013 /* OrderItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E10020 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B10020 /* BasicWarikanViewModel.swift */,
+				B10021 /* KeishaWarikanViewModel.swift */,
+				B10022 /* KobetsuWarikanViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E10030 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E10031 /* BasicWarikan */,
+				E10032 /* KeishaWarikan */,
+				E10033 /* KobetsuWarikan */,
+				E10034 /* History */,
+				E10035 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E10031 /* BasicWarikan */ = {
+			isa = PBXGroup;
+			children = (
+				B10030 /* BasicWarikanView.swift */,
+			);
+			path = BasicWarikan;
+			sourceTree = "<group>";
+		};
+		E10032 /* KeishaWarikan */ = {
+			isa = PBXGroup;
+			children = (
+				B10031 /* KeishaWarikanView.swift */,
+			);
+			path = KeishaWarikan;
+			sourceTree = "<group>";
+		};
+		E10033 /* KobetsuWarikan */ = {
+			isa = PBXGroup;
+			children = (
+				B10032 /* KobetsuWarikanView.swift */,
+			);
+			path = KobetsuWarikan;
+			sourceTree = "<group>";
+		};
+		E10034 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				B10033 /* HistoryListView.swift */,
+				B10034 /* HistoryDetailView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		E10035 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B10035 /* BannerAdView.swift */,
+				B10036 /* InterstitialAdManager.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E10040 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B10040 /* CurrencyFormatter.swift */,
+				B10041 /* PaymentLinkHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E10050 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B10004 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E10099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10001 /* WarikanDentaku.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10001 /* WarikanDentaku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G10003 /* Build configuration list for PBXNativeTarget "WarikanDentaku" */;
+			buildPhases = (
+				F10002 /* Sources */,
+				D10001 /* Frameworks */,
+				F10003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WarikanDentaku;
+			productName = WarikanDentaku;
+			productReference = C10001 /* WarikanDentaku.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F10001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = G10001 /* Build configuration list for PBXProject "WarikanDentaku" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = E10000;
+			productRefGroup = E10099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10001 /* WarikanDentaku */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F10003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10004 /* Preview Assets.xcassets in Resources */,
+				A10003 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F10002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* WarikanDentakuApp.swift in Sources */,
+				A10002 /* ContentView.swift in Sources */,
+				A10010 /* WarikanRecord.swift in Sources */,
+				A10011 /* PersonResult.swift in Sources */,
+				A10012 /* WarikanGroup.swift in Sources */,
+				A10013 /* OrderItem.swift in Sources */,
+				A10020 /* BasicWarikanViewModel.swift in Sources */,
+				A10021 /* KeishaWarikanViewModel.swift in Sources */,
+				A10022 /* KobetsuWarikanViewModel.swift in Sources */,
+				A10030 /* BasicWarikanView.swift in Sources */,
+				A10031 /* KeishaWarikanView.swift in Sources */,
+				A10032 /* KobetsuWarikanView.swift in Sources */,
+				A10033 /* HistoryListView.swift in Sources */,
+				A10034 /* HistoryDetailView.swift in Sources */,
+				A10035 /* BannerAdView.swift in Sources */,
+				A10036 /* InterstitialAdManager.swift in Sources */,
+				A10040 /* CurrencyFormatter.swift in Sources */,
+				A10041 /* PaymentLinkHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		H10001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		H10002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		H10003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WarikanDentaku/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "割り勘電卓";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warikandentaku.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		H10004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WarikanDentaku/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "割り勘電卓";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warikandentaku.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G10001 /* Build configuration list for PBXProject "WarikanDentaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10001 /* Debug */,
+				H10002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G10003 /* Build configuration list for PBXNativeTarget "WarikanDentaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10003 /* Debug */,
+				H10004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F10000 /* Project object */;
+}
